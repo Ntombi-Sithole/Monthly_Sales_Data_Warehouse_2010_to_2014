@@ -5,7 +5,7 @@ Quality Checks
 Script Purpose: 
     This script performes data quality checks across the silver
     schema to verify consistency, accuracy, and standardization
-    The checks include:
+    The checks include: 
     - Null or Duplicate primary keys.
     - Unwanted spaces in string fields.
     - Data Standardization and Consistency.
