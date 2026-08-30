@@ -14,7 +14,7 @@ The Gold Layer provides a business-oriented view of the data, designed to suppor
 | customer_key  | INT | Surrogate key uniquely identifying each customer record in the dimension table. |
 | customer_id | INT | A unique numerical identifier assigned to each customer. |
 | customer_number | NVARCHAR(50) | Alphanumeric identifier representing the customer, used for tracking and referencing. |
-| first_name | NVARCHAR(50) | The customer's first name, as recorder in the system. |
+| first_name | NVARCHAR(50) | The customer's first name, as recorded in the system. |
 | last_name | NVARCHAR(50) | The customer's last name or family name. |
 | country | NVARCHAR(50) | The country of residence for the customer (e.g., 'United States'). |
 | marital_status | NVARCHAR(50) | The marital status of the customer (e.g., 'Single', 'Married'). |
@@ -40,7 +40,7 @@ The Gold Layer provides a business-oriented view of the data, designed to suppor
 | maintenance | NVARCHAR(50) | Indicates whether the product requires maintenance (e.g., 'No', 'Yes'). |
 | cost | INT | The cost or base price of the product, measured in monetary units. |
 | product_line | NVARCHAR(50) | The specific product line or series to which the product belongs to (e.g., Road, Mountain). |
-| start_date | DATE | The date when the product became available for sale or use, stored in. |
+| start_date | DATE | The date when the product became available for sale or use. |
 
 ---
 
