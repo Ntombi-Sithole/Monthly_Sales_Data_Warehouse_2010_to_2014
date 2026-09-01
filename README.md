@@ -3,50 +3,31 @@
 Welcome to the Data Warehouse and Analytics Project repository! This portfolio project showcases a complete data warehousing and analytics solution—from designing and building the data warehouse to producing actionable insights. It demonstrates industry best practices in data engineering and analytics.
 
 ---
+## Business Problem & Project Objective
+* **The Challenge:** Enterprise data was fractured across two completely separate source systems: an *ERP system* and a *CRM system* (delivered via raw CSV files). Siloed datasets prevented leadership from achieving a single, unified view of business sales and customer metrics.
+* **The Solution:** Developed a centralized, high-performance local Data Warehouse using *SQL Server Express*. Implemented a structured multi-layer architecture to clean, standardize, and model the data for executive-level analytical reporting.
+
+---
 ## Data Architecture
 
 <img width="962" height="578" alt="architecture drawio" src="https://github.com/user-attachments/assets/bca462f0-85cf-4e0c-92af-208bc14677b7" />
 
-- **Bronze Layer:** Stores raw data in its original form from source systems. CSV files are ingested into a SQL Server database.  
-- **Silver Layer:** Applies data cleansing, standardization, and normalization to prepare the data for analysis.  
-- **Gold Layer:** Contains business-ready data structured in a star schema to support reporting and analytics.
+1. **Bronze Layer (Raw Ingestion):** Ingested raw datasets directly from the ERP and CRM systems into staging tables with minimal schema modification.
+2. **Silver Layer (Cleanse & Transform):** Cleansed and standardized disparate records. Resolved data quality anomalies, aligned mismatched customer data across CRM/ERP, and normalized structural definitions.
+3. **Gold Layer (Analytical Modeling):** Transformed cleaned tables into a business-ready *Star Schema* optimized for downstream Business Intelligence tools.
 ---
+## Tech Stack & Tools
+* **Database Engine:** SQL Server Express
+* **Database Administration & Queries:** SQL Server Management Studio (SSMS)
+* **Architecture & Data Modeling:** Draw.io
+* **Project Management & Lifecycle Tracking:** Notion
 
-## Project Overview
 
-This project includes:
-
-- **Data Architecture:** Designing a modern data warehouse based on the Medallion Architecture, consisting of Bronze, Silver, and Gold layers.  
-- **ETL Pipelines:** Extracting, transforming, and loading data from source systems into the data warehouse.  
-- **Data Modeling:** Creating fact and dimension tables optimized for analytical queries.  
-- **Analytics and Reporting:** Developing SQL-based reports and dashboards to generate actionable insights.
-
----
-## Project Requirements
-
-## Building the Data Warehouse (Data Engineering)
-
-## Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-## Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-
----
-
-### BI: Analytics & Reporting (Data Analysis)
-
-### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+## Key Features & Implementation
+* **Data Integration:** Consolidated duplicate and overlapping records between legacy ERP and CRM source tables into single core entities.
+* **Dimensional Modeling:** Engineered a structured *Star Schema* in the Gold Layer consisting of optimized Fact and Dimension tables.
+* **Performance Handling:** Designed primary and foreign key structures to enable fast analytical queries while maintaining strict relational data integrity.
+* **Project Governance:** Used Notion to actively plan out project steps, deadlines, data quality rules, and system mapping documentation.
 
 ---
 
